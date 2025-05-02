@@ -1,0 +1,11 @@
+{
+  "name": "Aztec DinD",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8080],
+  "mounts": ["source=/var/run/docker-host.sock,target=/var/run/docker.sock,type=bind"]
+}
